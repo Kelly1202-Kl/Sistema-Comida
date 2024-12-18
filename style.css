@@ -1,0 +1,235 @@
+/* Corpo Principal */
+body {
+  background-color: antiquewhite;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+padding: 10px;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke; 
+  background-color: MediumBlue;
+   border-radius: 5px;
+}
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px MediumBlue;
+  border-radius: 6px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  height: auto;
+}
+.botoes label {
+  margin-right: 20px;
+}
+
+.botoes button {
+  background-color: MediumBlue;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.botoes button:hover {
+  background-color: rgb(134, 134, 134);
+}
+
+.small-button {
+  padding: 5px 10px; /* Reduz tamanho */
+  font-size: 0.8em;
+}
+
+/* CPF */
+.cpf-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cpf-section label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#cpf {
+  width: 300px;
+  padding: 8px;
+  border: 2px solid MediumBlue;
+  border-radius: 4px;
+}
+
+/* Conteúdo */
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Recheios */
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+}
+
+.options label {
+  margin: 5px 0;
+}
+
+/* Visualização */
+.preview {
+  width: 30%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px;
+}
+
+#image-preview {
+  width: 120px;
+  height: 120px;
+}
+
+/* Resumo */
+.resumo {
+  padding: 5px;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px;
+}
+
+#preco-total {
+  color: rgb(211, 13, 13);
+  font-size: 1.2em;
+}
+
+/* Imagens dos recheios */
+#image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+#image-container img {
+  width: 60px; /* Tamanho das imagens dos recheios */
+  height: 60px;
+  margin: 5px; /* Espaço entre as imagens */
+}
+
+#base-image {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.recheio-img {
+  width: 30px; /* Define o tamanho da imagem */
+  height: 30px;
+  margin-left: 10px; /* Espaço entre texto e imagem */
+  vertical-align: middle; /* Alinha verticalmente com o texto */
+}
+
+/* Estilização uniforme para todas as caixas */
+.box {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px MediumBlue;
+  text-align: center;
+  width: 30%;
+  overflow: hidden; /* Evita que o conteúdo ultrapasse os limites */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Alinha as três seções lado a lado */
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Estilização das opções */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.coluna label {
+  display: block;
+  margin: 5px 0;
+  text-align: left;
+}
+
+/* Imagens no container */
+#image-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as imagens quebrem de linha */
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  max-height: 200px;
+  overflow-y: auto; /* Adiciona rolagem vertical caso ultrapasse o limite */
+}
+
+#image-container img {
+  width: 60px; /* Tamanho fixo das imagens */
+  height: 50px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão pagar */
+button {
+  background-color: MediumBlue;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: darkgray;
+}
+
+hr {
+  width: 100%;
+  border-style: solid;
+  border: 3px solid MediumBlue;
+  border-radius: 10px;
+}
